@@ -43,6 +43,7 @@ public class CommonViewPagerAdapter<T> extends PagerAdapter {
         // 也不在这里绑定数据，数据绑定交给Api调用者
 
         View view = getView(position, null, container);
+        container.addView(view);
         return view;
     }
 
